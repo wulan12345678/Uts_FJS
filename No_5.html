@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>nama hewan</title>
+</head>
+<body>
+
+  <button id="btn-enter">burung</button>
+  <div class="container">
+    <div id="burung"></div>
+  </div>
+  <button id="btn-hover">jerapah</button>
+  <div class="container">
+    <div id="jerapah"></div>
+  </div>
+
+<button id="btn-hover">kucing</button>
+  <div class="container">
+    <div id="kucing"></div>
+  </div>
+
+  <button id="btn-out">kuda</button>
+  <div class="container">
+    <div id="kuda"></div>
+  </div>
+
+  <script>
+    const btnEnter = document.getElementById("btn-enter");
+    const btnHover = document.getElementById("btn-hover");
+    const btnOut = document.getElementById("btn-out");
+
+    btnEnter.addEventListener("burung.jpg", function(event) {
+      event.target.innerText = "burung";
+    });
+
+    btnOut.addEventListener("jerapah.jpg", function(event) {
+      event.target.innerText = "jerapah";
+    });
+
+    btnOut.addEventListener("kucing.jpg", function(event) {
+      event.target.innerText = "kucing";
+    });
+
+    btnHover.addEventListener("kuda.jpg", function(event){
+      event.target.innerText = "kuda";
+    });
+
+
+    var burung= new Image(200,200);
+      burung.src ='burung.jpg';
+      x = document.getElementById("burung");
+      x.appendChild(burung);
+
+var myImage = new Image(200,200);
+      myImage.src ='jerapah.jpg';
+      x = document.getElementById("jerapah");
+      x.appendChild(myImage);
+
+var myImage = new  Image(200,200);
+      myImage.src ='kucing.jpg';
+      x = document.getElementById("kucing");
+      x.appendChild(myImage);
+
+var myImage = new Image(200,200);
+      myImage.src ='kuda.jpg';
+      x = document.getElementById("kuda");
+      x.appendChild(myImage);
+
+  </script>
+</body>
+</html>

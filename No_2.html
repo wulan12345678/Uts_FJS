@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Mahasiswa</title>
+</head>
+<body>
+
+  <div id="isi" class="isi"></div>
+  <div class="container"></div>
+        <div id="wulan"></div>
+
+    <script>
+    
+        const content= document.getElementById("isi");
+
+        const selamat= document.createElement("h1");
+        selamat.textContent="selamat ujian framework js";
+        content.appendChild(selamat);
+
+        const nama= document.createElement("p");
+        nama.textContent ="Nama: baiq wulandari";
+        content.appendChild(nama);
+
+        const nim= document.createElement("p");
+        nim.textContent ="Nim :SI17200012";
+        content.appendChild(nim)
+
+        const jurusan= document.createElement("p");
+        jurusan.textContent ="jurusan :sistem informasi";
+        content.appendChild(jurusan);
+
+        const tgl_ujian=document.createElement("p")
+        tgl_ujian.textContent="tanggal ujian: 11 november 2022";
+        content.appendChild(tgl_ujian);
+
+        var myImage= new Image(250, 250);
+        myImage.src='wulan.jpeg';
+        x=document.getElementById("wulan");
+        x.appendChild(myImage);
+
+    </script>
+</body>
+</html>

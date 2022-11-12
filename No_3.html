@@ -1,0 +1,22 @@
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>soal 3</title>
+</head>
+<body>
+    <script>
+        inputname();
+        function inputname(){
+            var Name = prompt("Masukkan Nama Aanda");
+            var h=(new Date()).getHours(); 
+            var m=(new Date()).getMinutes();
+            var s=(new Date()).getSeconds();
+            if (h >= 1 && h < 11) document.writeln("selamat pagi" +" "+ Name);
+            if (h >= 11 && h < 14) document.writeln("selamat siang" +" "+ Name);
+            if (h >= 14 && h < 19) document.writeln("selamat sore" +" "+ Name);
+            if (h >= 19 && h || h < 24) document.writeln("selamat malam" +" "+ Name);
+            
+        }
+    </script>
+</body>
